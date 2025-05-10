@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasty Vapes </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Age Verification Modal -->
+    <div id="ageVerificationModal" class="modal">
+        <div class="modal-content">
+            <h2>Age Verification</h2>
+            <p>Are you 21 years of age or older?</p>
+            <div class="modal-buttons">
+                <button id="confirmAge" class="btn-primary">Yes, I'm 21+</button>
+                <button id="denyAge" class="btn-secondary">No, I'm under 21</button>
+            </div>
+            <p class="disclaimer">By entering this site you agree to our Terms of Service and Privacy Policy</p>
+        </div>
+    </div>
+
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <p>FREE SHIPPING ON ORDERS OVER R500 | USE CODE: VAPE10 FOR 10% OFF</p>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="C:\Users\Geyser Inc\Documents\2025\Portfolio\Nasty website\images\logo.png" alt="Cloud9" class="logo-img">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#featured">Shop</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#deals">Deals</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="#search" class="search-icon"><i class="fas fa-search"></i></a>
+                <a href="#account" class="account-icon"><i class="fas fa-user"></i></a>
+                <a href="#cart" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+            </div>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+<!-- Hero Section -->
+<section class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/hero-bg.jpg') no-repeat center center/cover;">
+    <div class="hero-content">
+        <h1>Premium Vaping Experience</h1>
+        <p>Discover the latest devices, flavors, and accessories</p>
+        <a href="#featured" class="btn-primary">Shop Now</a>
+    </div>
+</section>
+
+    <!-- Featured Products -->
+    <section id="featured" class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-badge">BESTSELLER</div>
+                    <img src="C:\Users\Geyser Inc\Documents\2025\Nastye" alt="Vape Device">
+                    <h3>Cloud9 Pro X</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(124)</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">$59.99</span>
+                        <span class="original-price">$79.99</span>
+                    </div>
+                    <button class="btn-primary add-to-cart">Add to Cart</button>
+                    <button class="btn-secondary quick-view">Quick View</button>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-badge">NEW</div>
+                    <img src="https://via.placeholder.com/300x300?text=Vape+Juice" alt="Vape Juice">
+                    <h3>Berry Blast E-Liquid</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(87)</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">$14.99</span>
+                    </div>
+                    <button class="btn-primary add-to-cart">Add to Cart</button>
+                    <button class="btn-secondary quick-view">Quick View</button>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Vape+Pod" alt="Vape Pod">
+                    <h3>Nova Pod System</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(203)</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">$34.99</span>
+                        <span class="original-price">$39.99</span>
+                    </div>
+                    <button class="btn-primary add-to-cart">Add to Cart</button>
+                    <button class="btn-secondary quick-view">Quick View</button>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-badge">SALE</div>
+                    <img src="https://via.placeholder.com/300x300?text=Vape+Accessory" alt="Vape Accessory">
+                    <h3>Premium Coil Pack</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(56)</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">$19.99</span>
+                        <span class="original-price">$24.99</span>
+                    </div>
+                    <button class="btn-primary add-to-cart">Add to Cart</button>
+                    <button class="btn-secondary quick-view">Quick View</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="https://via.placeholder.com/400x300?text=Starter+Kits" alt="Starter Kits">
+                    <div class="category-overlay">
+                        <h3>Starter Kits</h3>
+                        <a href="#" class="btn-secondary">Shop Now</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="https://via.placeholder.com/400x300?text=E-Liquids" alt="E-Liquids">
+                    <div class="category-overlay">
+                        <h3>E-Liquids</h3>
+                        <a href="#" class="btn-secondary">Shop Now</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="https://via.placeholder.com/400x300?text=Pod+Systems" alt="Pod Systems">
+                    <div class="category-overlay">
+                        <h3>Pod Systems</h3>
+                        <a href="#" class="btn-secondary">Shop Now</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="https://via.placeholder.com/400x300?text=Accessories" alt="Accessories">
+                    <div class="category-overlay">
+                        <h3>Accessories</h3>
+                        <a href="#" class="btn-secondary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deals Section -->
+    <section id="deals" class="deals">
+        <div class="container">
+            <div class="deals-content">
+                <h2>Weekly Special</h2>
+                <h3>30% OFF All E-Liquids</h3>
+                <p>Use code: <strong>LIQUID30</strong> at checkout</p>
+                <p>Offer ends in:</p>
+                <div class="countdown">
+                    <div class="countdown-item">
+                        <span id="days">00</span>
+                        <span>Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="hours">00</span>
+                        <span>Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="minutes">00</span>
+                        <span>Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="seconds">00</span>
+                        <span>Seconds</span>
+                    </div>
+                </div>
+                <a href="#featured" class="btn-primary">Shop the Deal</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The Cloud9 Pro X is by far the best vape I've ever used. Amazing flavor and battery life!"</p>
+                        <div class="customer">
+                            <img src="https://via.placeholder.com/50x50" alt="Customer">
+                            <span>Michael T.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Fast shipping and great customer service. Will definitely order again!"</p>
+                        <div class="customer">
+                            <img src="https://via.placeholder.com/50x50" alt="Customer">
+                            <span>Sarah J.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>"The Berry Blast flavor is amazing. Tastes just like fresh berries!"</p>
+                        <div class="customer">
+                            <img src="https://via.placeholder.com/50x50" alt="Customer">
+                            <span>David L.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Join Our Newsletter</h2>
+                <p>Subscribe to get exclusive offers, product updates, and vaping tips.</p>
+                <form id="newsletterForm" class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+                <p class="privacy-text">We respect your privacy. Unsubscribe at any time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="#">Starter Kits</a></li>
+                        <li><a href="#">E-Liquids</a></li>
+                        <li><a href="#">Pod Systems</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Deals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Wholesale</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <h3>Payment Methods</h3>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-discover"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Cloud9 Vapes. All Rights Reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Age Verification</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quick View Modal -->
+    <div id="quickViewModal" class="modal">
+        <div class="modal-content quick-view-content">
+            <span class="close-modal">&times;</span>
+            <div class="quick-view-grid">
+                <div class="quick-view-images">
+                    <div class="main-image">
+                        <img id="quickViewMainImage" src="https://via.placeholder.com/500x500" alt="Product">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="https://via.placeholder.com/100x100" alt="Thumbnail">
+                        <img src="https://via.placeholder.com/100x100" alt="Thumbnail">
+                        <img src="https://via.placeholder.com/100x100" alt="Thumbnail">
+                    </div>
+                </div>
+                <div class="quick-view-details">
+                    <h2 id="quickViewTitle">Product Title</h2>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(124 reviews)</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">$59.99</span>
+                        <span class="original-price">$79.99</span>
+                    </div>
+                    <p id="quickViewDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+                    <div class="product-options">
+                        <div class="option">
+                            <label>Flavor:</label>
+                            <select>
+                                <option>Berry Blast</option>
+                                <option>Mango Tango</option>
+                                <option>Mint Chill</option>
+                            </select>
+                        </div>
+                        <div class="option">
+                            <label>Nicotine Strength:</label>
+                            <select>
+                                <option>0mg</option>
+                                <option>3mg</option>
+                                <option>6mg</option>
+                                <option>12mg</option>
+                            </select>
+                        </div>
+                        <div class="option">
+                            <label>Quantity:</label>
+                            <div class="quantity-selector">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" value="1" min="1">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-primary add-to-cart">Add to Cart</button>
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-truck"></i>
+                            <span>Free shipping on orders over $50</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-undo"></i>
+                            <span>30-day return policy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content auth-modal">
+            <span class="close-modal">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn-primary">Login</button>
+                <div class="auth-links">
+                    <a href="#" id="showRegister">Create an account</a>
+                    <a href="#">Forgot password?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content auth-modal">
+            <span class="close-modal">&times;</span>
+            <h2>Register</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="registerName">Full Name</label>
+                    <input type="text" id="registerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" id="registerEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Password</label>
+                    <input type="password" id="registerPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerConfirmPassword">Confirm Password</label>
+                    <input type="password" id="registerConfirmPassword" required>
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="registerAgeVerify" required>
+                    <label for="registerAgeVerify">I confirm that I am 21 years of age or older</label>
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="registerSubscribe">
+                    <label for="registerSubscribe">Subscribe to our newsletter</label>
+                </div>
+                <button type="submit" class="btn-primary">Register</button>
+                <div class="auth-links">
+                    <a href="#" id="showLogin">Already have an account? Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
